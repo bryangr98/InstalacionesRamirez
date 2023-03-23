@@ -1,0 +1,250 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  min-width: 600px;
+  max-width: 90%;
+  margin: auto;
+    font-family: 'Arial', sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+  /* Encabezado */
+    header
+    {
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+    justify-content: space-around;
+  }
+  .logo__img{
+    width: 100px;
+    height: 50px;
+    fill: #f5f5f5;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #FFD700;
+  }
+  
+  /* Banner */
+  .banner {
+    position: relative;
+    width: 100%;
+    height:35%;
+    overflow: hidden;
+  }
+
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 7s infinite;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33.3% {
+      transform: translateX(-100%);
+    }
+    66.6% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Sobre nosotros */
+  .about-us {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #003366;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .about-us h3 {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .about-us button:hover {
+    background-color: #FFD700;
+    color: #333;
+  }
+  
+  /* Nuestro trabajo */
+  .our-work {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .our-work h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #003366;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery__img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+  /* Footer */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/*RESPONSIVE Menu float*/
+@media  screen and (max-width :800px){
+    header{
+        float: left;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    header::after{
+      content: "IER";
+      color: whitesmoke;
+    }
+
+    .logo{
+      display:none;
+    }
+
+    .banner{
+      margin-top: 50px;
+    }
+    .lista{
+        display: none;
+        font-size: 25px;
+    }
+    .lista li a{
+        color: #d36539;
+    }
+    .lista li a:hover{
+        color: #433f51;
+        font-size: 35px;
+    }
+    nav ul{
+        display: inline;
+        text-align: end;
+        flex-direction: column;
+        font-size: 20px;
+        position: absolute;
+        right: 50px;
+    }
+    header:hover .lista{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+}
+
+.custom-button {
+  background-color: #ffb300;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #888888;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all  ease;
+}
+.custom-button a{
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #34275b;
+  cursor: pointer;
+}

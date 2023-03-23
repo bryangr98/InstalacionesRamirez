@@ -1,0 +1,23 @@
+{
+"img":[
+  {
+    "id": 1,
+    "title": "Proyecto 1",
+    "image": "img/proyecto1.jpg",
+    "description": "Descripción del proyecto 1."
+  },
+  {
+    "id": 2,
+    "title": "Proyecto 2",
+    "image": "img/proyecto2.jpg",
+    "description": "Descripción del proyecto 2."
+  },
+  {
+    "id": 3,
+    "title": "Proyecto 3",
+    "image": "img/proyecto3.jpg",
+    "description": "Descripción del proyecto 3."
+  }
+
+]
+}

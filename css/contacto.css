@@ -1,0 +1,114 @@
+.contact{
+  display: flex;
+  margin: auto;
+
+}
+
+/* 
+  Whatsapp */
+  .contact__whatsapp{
+    margin-top: 10px;
+  }
+  .whatsapp-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a6ecb9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .whatsapp-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #075e54;
+  }
+  
+  .whatsapp-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .whatsapp-form input[type="text"],
+  .whatsapp-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .whatsapp-form button[type="submit"] {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  #boton__submit{
+    margin: auto;
+  }
+  
+  .whatsapp-form button[type="submit"] img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  @media  screen and (max-width :800px){
+    header{
+        float: left;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    header::after{
+      content: "IER";
+      color: whitesmoke;
+    }
+
+    .logo{
+      display:none;
+    }
+    .banner{
+      margin-top: 50px;
+    }
+    .lista{
+        display: none;
+        font-size: 25px;
+    }
+    .lista li a{
+        color: #d36539;
+    }
+    .lista li a:hover{
+        color: #433f51;
+        font-size: 35px;
+    }
+    nav ul{
+        display: inline;
+        text-align: end;
+        flex-direction: column;
+        font-size: 20px;
+        position: absolute;
+        right: 50px;
+    }
+    header:hover .lista{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+  }

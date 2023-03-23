@@ -1,0 +1,41 @@
+.banner__01{
+    height:250px;
+    width: 100%;
+    background: linear-gradient(to right, #005c97, #363795);
+    display: flex;
+}
+.banner__01 h2{
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    color: antiquewhite;
+}
+
+.banner__02{
+    height:250px;
+    width: 100%;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    display: flex;
+}
+.banner__02 h2{
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    color: antiquewhite;
+}
+
+.banner__03{
+    height:250px;
+    width: 100%;
+    background: linear-gradient(to right, #3a7bd5, #3a6073);
+    display: flex;
+}
+.banner__03 h2{
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    color: antiquewhite;
+}

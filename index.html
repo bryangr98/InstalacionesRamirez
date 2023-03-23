@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones Ramirez</title>
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/banner.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo__img" src="/img/logo.svg" alt="logo">
+        </div>
+        <div class="lista">
+            <nav >
+                <ul >
+                <li><a href="#">Inicio</a></li> 
+
+                <!-- <li><a href="#">Nosotros</a></li> -->
+
+                <li><a href="/pages/nuestroTrabajo.html">Trabajos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="slides">
+        <div class="slide">
+            <!-- <img src="https://via.placeholder.com/1500x500" alt="Slide 1"> -->
+            <div class="banner__01">
+                <h2>ELECTRICIDAD</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <!-- <img src="https://via.placeholder.com/1500x500" alt="Slide 2"> -->
+            <div class="banner__02">
+                <h2>PLOMERIA</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <!-- <img src="https://via.placeholder.com/1500x500" alt="Slide 3"> -->
+            <div class="banner__03">
+                <h2>ALBERCAS</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <h2>Sobre Nosotros</h2>
+        <p>En la compañia <b>Instalaciones Electricas Ramirez</b>, estamos comprometidos con la excelencia en cada proyecto que realizamos. Nuestro objetivo es superar las expectativas de nuestros clientes y construir relaciones duraderas basadas en la confianza y la calidad de nuestro trabajo.</p>
+    </section>
+    <section class="our-work" id="nuestro-trabajo">
+        <h2>Nuestro trabajo</h2>
+        <div class="gallery">
+        <img class="gallery__img" src="/img/fachada_ladrillo.png" alt="Proyecto 1">
+        <img class="gallery__img" src="/img/alberca.png" alt="Proyecto 2">
+        <img class="gallery__img" src="/img/baño_obra.png" alt="Proyecto 3">
+        <img class="gallery__img" src="/img/hidro.jpg" alt="Proyecto 4">
+        <img class="gallery__img" src="/img/filtro.png" alt="Proyecto 5">
+        <img class="gallery__img" src="/img/alberca2.png" alt="Proyecto 6">
+        </div>
+        <button class="custom-button"><a href="/pages/nuestroTrabajo.html">Ver mas ...</a></button>
+
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__whatsapp">
+            <div class="whatsapp-form">
+                <h2>Contacto WhatsApp</h2>
+                <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button id="boton__submit" type="submit" onclick="enviarMensaje()">
+                    <img src="/img/whatsapp-icon.svg" alt="Icono de WhatsApp">
+                    Enviar mensaje
+                </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Derechos Reservados &copy; 2023</p>
+        <p>Instalaciones Electricas e Hidrahulicas Ramirez</p>
+        <p>instalaciones de calidad</p>
+      </footer>
+
+    <script src="/JavaScript/contacto.js"></script>
+    <script type="module" src="/JavaScript/admin.js"></script>
+</body>
+</html>
